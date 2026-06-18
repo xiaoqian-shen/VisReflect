@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="VisReflect">
+
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="Vision-Language Model, Multi-modal LLM, Spatial-Temporal Understanding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>VisReflect</title>
+    <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-five-sixths">
+                <div class="column has-text-centered">
+                    <h1 class="title is-2 publication-title">VisReflect: Latent Visual Reflection for Fine-Grained Perception in Long Visual Context</h1>
+
+                    <div class="is-size-5 publication-authors">
+                        <!-- Paper authors -->
+                        <a href="https://xiaoqian-shen.github.io/" style="color:#008AD7;font-weight:normal;">Xiaoqian
+                            Shen</a>,</span>
+                        <a href="https://www.mohamed-elhoseiny.com/" style="color:#008AD7;font-weight:normal;">Mohamed
+                            Elhoseiny</a></span>
+                    </div>
+
+                    <div class="is-size-4 publication-authors">
+                        <span class="author-block">King Abdullah University of Science and Technology (KAUST)</span>
+                    </div>
+
+                    <div class="logos">
+                        <img src="static/images/kaust-logo.webp" style="width: auto; height: 70px;">
+                    </div>
+
+                    <div class="content has-text-centered">
+                        <div class="publication-links">
+                  <span class="link-block">
+                    <a href="" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                             <span class="link-block">
+                  <a href="https://github.com/xiaoqian-shen/VisReflect" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+                </span>
+
+                           <!-- <span class="link-block">
+                      <a href="" target="_blank"
+                         class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        🤗
+                      </span>
+                      <span>Models</span>
+                    </a>
+                  </span> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-five-sixths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Large Vision Language Models (LVLMs) have achieved remarkable success on vision–language tasks, yet fine-grained perception over high-resolution images and long-context videos remains challenging. As the number of visual tokens increases, the visual attention sink phenomenon becomes increasingly severe, causing irrelevant tokens to absorb a disproportionate amount of attention mass. Recent approaches attempt to mitigate this issue by explicitly predicting bounding boxes or temporal spans and re-encoding the cropped visual regions. Such methods depend on unreliable numeric localization in the discrete token space and incur significant computational overhead due to additional forward passes. In this work, we propose <strong>VisReflect</strong>, a simple yet effective framework that improves fine-grained perception in long visual contexts through latent visual reflection. Instead of decoding intermediate predictions into discrete tokens, the model generates continuous visual reflection that represents question-relevant visual features in the latent space. These reflections selectively emphasize salient regions or frames, guiding attention towards relevant visual tokens within a single forward pass. We conduct comprehensive evaluations on challenging high-resolution image benchmarks, including BLINK, V*, and HRBench-4K/8K, as well as video understanding benchmarks such as MVBench, VideoMME, and MLVU. Our method consistently improves over strong baselines, achieving gains of 4.1% on image benchmarks and 1.8% on video benchmarks. Compared with zooming-based methods, our model achieves comparable performance while reducing inference time by roughly 44% on video understanding.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="section hero">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-five-sixths">
+                <h2 class="title is-3">Overview</h2>
+                <h2 class="content has-text-justified">
+                    Existing zooming-based methods localize relevant regions or frames by predicting coordinates in discrete token space and performing repeated forward passes. In contrast, VisReflect generates latent visual reflection tokens in continuous visual space, enabling the model to internally recall question-relevant visual features within a single forward pass.
+                </h2>
+                <img src="static/images/teaser.png" width="80%"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Paper Qualitative -->
+<section class="section hero">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-five-sixths">
+                <h2 class="title is-3">Model Design</h2>
+                <h2 class="content has-text-justified">
+                    Given visual tokens extracted from a high-resolution image or a long-form video together with a textual query, a LVLM generates a sequence of visual reflection tokens between the special tokens <BOR> and <EOR>. These tokens are trained to approximate the latent visual representations of the region of interest (for images) or frames of interest (for videos) that are relevant to the question. Instead of explicitly cropping images or re-encoding selected frames, the model recalls question-relevant visual features directly in the latent embedding space using its last hidden states. The reflected visual features then guide the model’s attention toward informative parts of the visual context, enabling accurate fine-grained perception in high-resolution images and long-form videos while requiring only a single forward pass.
+                </h2>
+                    <div class="myrow">
+                    <img src="static/images/main.png" width="80%"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section hero">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-five-sixths">
+                <h2 class="title is-3">Image Understanding</h2>
+                <div class="myrow">
+                    <img src="static/images/result1.png" width="70%"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section hero">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-five-sixths">
+                <h2 class="title is-3">Long Video Understanding</h2>
+                <div class="myrow">
+                    <img src="static/images/result2.png" width="70%"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section hero">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-five-sixths">
+                <h2 class="title is-3">Attention Visualization</h2>
+                <div class="myrow">
+                    <img src="static/images/attn.png" width="90%"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--BibTex citation -->
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Citation</h2><pre><code>@article{shen2024longvu,
+  title={LongVU: Spatiotemporal Adaptive Compression for Long Video-Language Understanding},
+  author={Shen, Xiaoqian and Xiong, Yunyang and Zhao, Changsheng and Wu, Lemeng and Chen, Jun and Zhu, Chenchen and Liu, Zechun and Xiao, Fanyi and Varadarajan, Balakrishnan and Bordes, Florian and Liu, Zhuang and Xu, Hu and J. Kim, Hyunwoo and Soran, Bilge and Krishnamoorthi, Raghuraman and Elhoseiny, Mohamed and Chandra, Vikas},
+  journal={arXiv:2410.17434},
+  year={2024}
+}</code></pre>
+  </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+
+                    <p>
+                        This page was built using the <a
+                            href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic
+                        Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io"
+                                                                                target="_blank">Nerfies</a> project
+                        page.
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+<!-- End of Statcounter Code -->
+
+</body>
+</html>
