@@ -19,7 +19,7 @@ King Abdullah University of Science and Technology (KAUST)
 ### ⚙️ Environment setup
 
 ```bash
-git clone <this-repo> VisReflect && cd VisReflect
+git clone https://github.com/xiaoqian-shen/VisReflect.git && cd VisReflect
 conda create -n visreflect python=3.12 -y && conda activate visreflect
 pip install -r requirements.txt          # PyTorch 2.6.0 + CUDA 12.4
 pip install flash-attn==2.7.4.post1 --no-build-isolation
