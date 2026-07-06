@@ -3,8 +3,8 @@
 <div align="center">
     <h4>
         <div>
-          VisReflect: Latent Visual Reflection for Fine-Grained Perception in Long Visual Context<br>
-<div></div>
+            
+VisReflect: Latent Visual Reflection for Fine-Grained Perception in Long Visual Context<br>
 
 [![Project Page](https://img.shields.io/badge/Project-Page-blue?style=flat-square)](https://xiaoqian-shen.github.io/VisReflect/)
 [![Paper](https://img.shields.io/badge/arXiv-2606.30288-b31b1b?style=flat-square)](https://arxiv.org/abs/2606.30288)
@@ -34,8 +34,8 @@ export PYTHONPATH="$PWD:$PYTHONPATH"      # run modules from the repo root
 
 | Model | Base | Modality | Weights |
 | :--- | :---: | :---: | :---: |
-| **VisReflect-7B-Image** | Qwen2.5-VL-7B | high-resolution image | [🤗 shenxq/VisReflect-7B-Image](https://huggingface.co/shenxq/VisReflect-7B-Image) |
-| **VisReflect-7B-Video** | Qwen2.5-VL-7B | long video | [🤗 shenxq/VisReflect-7B-Video](https://huggingface.co/shenxq/VisReflect-7B-Video) |
+| **VisReflect-7B-Image** | Qwen2.5-VL-7B | high-resolution image | 🤗 [VisReflect-7B-Image](https://huggingface.co/shenxq/VisReflect-7B-Image) |
+| **VisReflect-7B-Video** | Qwen2.5-VL-7B | long video | 🤗 [VisReflect-7B-Video](https://huggingface.co/shenxq/VisReflect-7B-Video) |
 
 `--model_path` / `MODEL_ID` accept a HuggingFace id (downloaded automatically) or a local
 checkpoint dir.
