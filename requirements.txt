@@ -4,15 +4,11 @@
 # qwen-vl-utils, decord) are pinned to the versions the checkpoints were validated against;
 # the rest are pinned to versions that co-install with them.
 #   pip install -r requirements.txt
-# If flash-attn is unavailable, run with VISREFLECT_ATTN_IMPL=sdpa (see README).
 
-# --- Core model / inference (reproduction-critical) ---------------------------
+# --- Core model / inference ---------------------------
 torch==2.6.0
 torchvision==0.21.0
 transformers==4.54.0
-# FlashAttention 2 backend, used by default (attn_implementation="flash_attention_2").
-# Heavy to build (needs a matching CUDA toolchain). Set VISREFLECT_ATTN_IMPL=sdpa to run
-# on the PyTorch SDPA backend instead (equivalent greedy-decode results).
 flash-attn==2.7.4.post1
 # Qwen2.5-VL vision preprocessing. 0.0.14 is REQUIRED: 0.0.8 lacks the
 # image_patch_size / return_video_kwargs kwargs the eval passes (-> TypeError on images).
