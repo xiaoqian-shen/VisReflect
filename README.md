@@ -3,7 +3,7 @@
 <div align="center">
     <h4>
         <div>
-          VisReflect: Latent Visual Reflection for Fine-Grained Perception in Long Visual Context
+          VisReflect: Latent Visual Reflection for Fine-Grained Perception in Long Visual Context<br>
 <div></div>
 
 [![Project Page](https://img.shields.io/badge/Project-Page-blue?style=flat-square)](https://xiaoqian-shen.github.io/VisReflect/)
