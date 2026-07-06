@@ -1,10 +1,8 @@
 # VisReflect
 
 <div align="center">
-    <h4>
-        <div>
             
-VisReflect: Latent Visual Reflection for Fine-Grained Perception in Long Visual Context<br>
+**VisReflect: Latent Visual Reflection for Fine-Grained Perception in Long Visual Context**
 
 [![Project Page](https://img.shields.io/badge/Project-Page-blue?style=flat-square)](https://xiaoqian-shen.github.io/VisReflect/)
 [![Paper](https://img.shields.io/badge/arXiv-2606.30288-b31b1b?style=flat-square)](https://arxiv.org/abs/2606.30288)
@@ -14,8 +12,6 @@ VisReflect: Latent Visual Reflection for Fine-Grained Perception in Long Visual 
 
 King Abdullah University of Science and Technology (KAUST)
 
-</div>
-    </h4>
 </div>
 
 ## :rocket: Get Started
