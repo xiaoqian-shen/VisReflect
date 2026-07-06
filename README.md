@@ -1,5 +1,3 @@
-<div align="center">
-
 # VisReflect
 
 <div align="center">
