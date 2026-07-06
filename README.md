@@ -4,7 +4,7 @@
     <h4>
         <div>
           VisReflect: Latent Visual Reflection for Fine-Grained Perception in Long Visual Context
-
+<br>
 [![Project Page](https://img.shields.io/badge/Project-Page-blue?style=flat-square)](https://xiaoqian-shen.github.io/VisReflect/)
 [![Paper](https://img.shields.io/badge/arXiv-2606.30288-b31b1b?style=flat-square)](https://arxiv.org/abs/2606.30288)
 [![Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow?style=flat-square)](https://huggingface.co/collections/shenxq/visreflect)
