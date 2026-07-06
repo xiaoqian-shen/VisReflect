@@ -42,9 +42,7 @@ MAX_FRAMES="${MAX_FRAMES:-256}"
 FPS="${FPS:-1}"
 GRAD_ACCUM_STEPS="${GRAD_ACCUM_STEPS:-1}"
 LEARNING_RATE="${LEARNING_RATE:-1e-6}"
-# Video default 0.0: the visual-reflection signal comes from the latent-CE two-pass
-# (vtk_train_latent_ce), not the cosine align loss. Set >0 to also pull <VR> to the clue frames.
-LOSS_ALIGN_LAMBDA="${LOSS_ALIGN_LAMBDA:-0.0}"
+LOSS_ALIGN_LAMBDA="${LOSS_ALIGN_LAMBDA:-0.1}"
 FREEZE_VISION_TOWER="${FREEZE_VISION_TOWER:-True}"
 FREEZE_MERGER="${FREEZE_MERGER:-True}"
 FREEZE_LLM="${FREEZE_LLM:-False}"
