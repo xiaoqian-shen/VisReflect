@@ -8,7 +8,7 @@
 #   {"image": "<path rel to IMAGE_FOLDER>" (or a list of paths),
 #    "bboxes": [[x0, y0, x1, y1], ...],   # normalized xyxy; the visual-reflection crops
 #    "conversations": [{"from": "human", "value": "<image>\n<question>"},
-#                      {"from": "gpt",   "value": "<answer> X </answer>"}]}
+#                      {"from": "gpt",   "value": "The answer is: X"}]}
 # (A meta-manifest list of {data_path, image_folder, ds_name} is also accepted.)
 #
 # Usage:
