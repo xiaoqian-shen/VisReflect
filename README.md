@@ -30,8 +30,8 @@ export PYTHONPATH="$PWD:$PYTHONPATH"      # run modules from the repo root
 
 | Model | Base | Modality | Weights |
 | :--- | :---: | :---: | :---: |
-| **VisReflect-7B-Image** | Qwen2.5-VL-7B | high-resolution image | 🤗 [VisReflect-7B-Image](https://huggingface.co/shenxq/VisReflect-7B-Image) |
-| **VisReflect-7B-Video** | Qwen2.5-VL-7B | long video | 🤗 [VisReflect-7B-Video](https://huggingface.co/shenxq/VisReflect-7B-Video) |
+| **VisReflect-7B-Image** | Qwen2.5-VL-7B | image | 🤗 [VisReflect-7B-Image](https://huggingface.co/shenxq/VisReflect-7B-Image) |
+| **VisReflect-7B-Video** | Qwen2.5-VL-7B | video | 🤗 [VisReflect-7B-Video](https://huggingface.co/shenxq/VisReflect-7B-Video) |
 
 `--model_path` / `MODEL_ID` accept a HuggingFace id (downloaded automatically) or a local
 checkpoint dir.
